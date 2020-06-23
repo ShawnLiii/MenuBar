@@ -7,15 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1DCEDB2486B7D100E737CF /* MenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DCEDA2486B7D100E737CF /* MenuBarTests.swift */; };
+		3D1DCEE42486B93B00E737CF /* HeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DCEE32486B93B00E737CF /* HeroViewModel.swift */; };
+		3D1DCEE62486B95600E737CF /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DCEE52486B95600E737CF /* Marvel.swift */; };
+		3D1DCEE82486B9B300E737CF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DCEE72486B9B300E737CF /* AppConstants.swift */; };
 		3D2AB8B12485633500670CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AB8B02485633500670CED /* AppDelegate.swift */; };
 		3D2AB8B32485633500670CED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AB8B22485633500670CED /* SceneDelegate.swift */; };
 		3D2AB8B52485633500670CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AB8B42485633500670CED /* ViewController.swift */; };
 		3D2AB8B82485633500670CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2AB8B62485633500670CED /* Main.storyboard */; };
 		3D2AB8BA2485633600670CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2AB8B92485633600670CED /* Assets.xcassets */; };
 		3D2AB8BD2485633600670CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2AB8BB2485633600670CED /* LaunchScreen.storyboard */; };
+		3D2AB8CA24856B8300670CED /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AB8C924856B8300670CED /* MenuCell.swift */; };
+		3D2AB8CC2485709800670CED /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AB8CB2485709800670CED /* MenuOptions.swift */; };
+		85E908175CFA33C1FD28955D /* Pods_MenuBarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F12E24823C4127738AAC3 /* Pods_MenuBarTests.framework */; };
+		CB183954FFA7DD20DA7EE832 /* Pods_MenuBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C210EF86AF19064739D02573 /* Pods_MenuBar.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3D1DCEDD2486B7D100E737CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2AB8A52485633500670CED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2AB8AC2485633500670CED;
+			remoteInfo = MenuBar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2AC700AA11DCC7C211F5EA0A /* Pods-MenuBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBar/Pods-MenuBar.debug.xcconfig"; sourceTree = "<group>"; };
+		3D1DCED82486B7D100E737CF /* MenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1DCEDA2486B7D100E737CF /* MenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTests.swift; sourceTree = "<group>"; };
+		3D1DCEDC2486B7D100E737CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1DCEE32486B93B00E737CF /* HeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewModel.swift; sourceTree = "<group>"; };
+		3D1DCEE52486B95600E737CF /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
+		3D1DCEE72486B9B300E737CF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		3D2AB8AD2485633500670CED /* MenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2AB8B02485633500670CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2AB8B22485633500670CED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,24 +49,77 @@
 		3D2AB8B92485633600670CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2AB8BC2485633600670CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2AB8BE2485633600670CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D2AB8C924856B8300670CED /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		3D2AB8CB2485709800670CED /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
+		68D1594C1869B314CCA21F49 /* Pods-MenuBarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarTests/Pods-MenuBarTests.release.xcconfig"; sourceTree = "<group>"; };
+		A09A36757EC3AAD6E2DDD8E0 /* Pods-MenuBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBar/Pods-MenuBar.release.xcconfig"; sourceTree = "<group>"; };
+		B88F12E24823C4127738AAC3 /* Pods_MenuBarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C210EF86AF19064739D02573 /* Pods_MenuBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD662917F6524F620AA0AAA0 /* Pods-MenuBarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuBarTests/Pods-MenuBarTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D1DCED52486B7D100E737CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E908175CFA33C1FD28955D /* Pods_MenuBarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D2AB8AA2485633500670CED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB183954FFA7DD20DA7EE832 /* Pods_MenuBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05C6917A70BA884BA2822A72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C210EF86AF19064739D02573 /* Pods_MenuBar.framework */,
+				B88F12E24823C4127738AAC3 /* Pods_MenuBarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D1DCED92486B7D100E737CF /* MenuBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DCEDA2486B7D100E737CF /* MenuBarTests.swift */,
+				3D1DCEDC2486B7D100E737CF /* Info.plist */,
+			);
+			path = MenuBarTests;
+			sourceTree = "<group>";
+		};
+		3D1DCEE22486B7F500E737CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DCEE32486B93B00E737CF /* HeroViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D1DCEE92486B9DE00E737CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DCEE72486B9B300E737CF /* AppConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3D2AB8A42485633500670CED = {
 			isa = PBXGroup;
 			children = (
 				3D2AB8AF2485633500670CED /* MenuBar */,
+				3D1DCED92486B7D100E737CF /* MenuBarTests */,
 				3D2AB8AE2485633500670CED /* Products */,
+				E08689B5C575E37941AC573A /* Pods */,
+				05C6917A70BA884BA2822A72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2AB8AD2485633500670CED /* MenuBar.app */,
+				3D1DCED82486B7D100E737CF /* MenuBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +135,104 @@
 		3D2AB8AF2485633500670CED /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
-				3D2AB8B02485633500670CED /* AppDelegate.swift */,
-				3D2AB8B22485633500670CED /* SceneDelegate.swift */,
-				3D2AB8B42485633500670CED /* ViewController.swift */,
-				3D2AB8B62485633500670CED /* Main.storyboard */,
+				3D1DCEE22486B7F500E737CF /* ViewModel */,
+				3D2AB8C42485634000670CED /* Common */,
+				3D2AB8C72485636900670CED /* Model */,
+				3D2AB8C62485635500670CED /* View */,
+				3D2AB8C52485634800670CED /* Controller */,
 				3D2AB8B92485633600670CED /* Assets.xcassets */,
-				3D2AB8BB2485633600670CED /* LaunchScreen.storyboard */,
 				3D2AB8BE2485633600670CED /* Info.plist */,
 			);
 			path = MenuBar;
 			sourceTree = "<group>";
 		};
+		3D2AB8C42485634000670CED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D1DCEE92486B9DE00E737CF /* Utils */,
+				3D2AB8B02485633500670CED /* AppDelegate.swift */,
+				3D2AB8B22485633500670CED /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D2AB8C52485634800670CED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AB8B42485633500670CED /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D2AB8C62485635500670CED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AB8C824856B0B00670CED /* CustomizeCell */,
+				3D2AB8B62485633500670CED /* Main.storyboard */,
+				3D2AB8BB2485633600670CED /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D2AB8C72485636900670CED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AB8CB2485709800670CED /* MenuOptions.swift */,
+				3D1DCEE52486B95600E737CF /* Marvel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D2AB8C824856B0B00670CED /* CustomizeCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AB8C924856B8300670CED /* MenuCell.swift */,
+			);
+			path = CustomizeCell;
+			sourceTree = "<group>";
+		};
+		E08689B5C575E37941AC573A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AC700AA11DCC7C211F5EA0A /* Pods-MenuBar.debug.xcconfig */,
+				A09A36757EC3AAD6E2DDD8E0 /* Pods-MenuBar.release.xcconfig */,
+				DD662917F6524F620AA0AAA0 /* Pods-MenuBarTests.debug.xcconfig */,
+				68D1594C1869B314CCA21F49 /* Pods-MenuBarTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D1DCED72486B7D100E737CF /* MenuBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1DCEE12486B7D100E737CF /* Build configuration list for PBXNativeTarget "MenuBarTests" */;
+			buildPhases = (
+				AA6E6D692832888ECAD27B57 /* [CP] Check Pods Manifest.lock */,
+				3D1DCED42486B7D100E737CF /* Sources */,
+				3D1DCED52486B7D100E737CF /* Frameworks */,
+				3D1DCED62486B7D100E737CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1DCEDE2486B7D100E737CF /* PBXTargetDependency */,
+			);
+			name = MenuBarTests;
+			productName = MenuBarTests;
+			productReference = 3D1DCED82486B7D100E737CF /* MenuBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3D2AB8AC2485633500670CED /* MenuBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2AB8C12485633600670CED /* Build configuration list for PBXNativeTarget "MenuBar" */;
 			buildPhases = (
+				F5DD7811334AA1842851CA72 /* [CP] Check Pods Manifest.lock */,
 				3D2AB8A92485633500670CED /* Sources */,
 				3D2AB8AA2485633500670CED /* Frameworks */,
 				3D2AB8AB2485633500670CED /* Resources */,
+				8E78BDF3E8561F9B1047645B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +253,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = ShawnLi;
 				TargetAttributes = {
+					3D1DCED72486B7D100E737CF = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3D2AB8AC2485633500670CED;
+					};
 					3D2AB8AC2485633500670CED = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -116,11 +276,19 @@
 			projectRoot = "";
 			targets = (
 				3D2AB8AC2485633500670CED /* MenuBar */,
+				3D1DCED72486B7D100E737CF /* MenuBarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D1DCED62486B7D100E737CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D2AB8AB2485633500670CED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +301,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E78BDF3E8561F9B1047645B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MenuBar/Pods-MenuBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MarvelApiWrapper/MarvelApiWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarvelApiWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuBar/Pods-MenuBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6E6D692832888ECAD27B57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuBarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5DD7811334AA1842851CA72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3D1DCED42486B7D100E737CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1DCEDB2486B7D100E737CF /* MenuBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D2AB8A92485633500670CED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1DCEE82486B9B300E737CF /* AppConstants.swift in Sources */,
+				3D1DCEE62486B95600E737CF /* Marvel.swift in Sources */,
 				3D2AB8B52485633500670CED /* ViewController.swift in Sources */,
 				3D2AB8B12485633500670CED /* AppDelegate.swift in Sources */,
+				3D2AB8CC2485709800670CED /* MenuOptions.swift in Sources */,
+				3D2AB8CA24856B8300670CED /* MenuCell.swift in Sources */,
+				3D1DCEE42486B93B00E737CF /* HeroViewModel.swift in Sources */,
 				3D2AB8B32485633500670CED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D1DCEDE2486B7D100E737CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2AB8AC2485633500670CED /* MenuBar */;
+			targetProxy = 3D1DCEDD2486B7D100E737CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D2AB8B62485633500670CED /* Main.storyboard */ = {
@@ -166,6 +418,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D1DCEDF2486B7D100E737CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD662917F6524F620AA0AAA0 /* Pods-MenuBarTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NAJ323R5S;
+				INFOPLIST_FILE = MenuBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawnli.MenuBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBar.app/MenuBar";
+			};
+			name = Debug;
+		};
+		3D1DCEE02486B7D100E737CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D1594C1869B314CCA21F49 /* Pods-MenuBarTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NAJ323R5S;
+				INFOPLIST_FILE = MenuBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawnli.MenuBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBar.app/MenuBar";
+			};
+			name = Release;
+		};
 		3D2AB8BF2485633600670CED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +576,7 @@
 		};
 		3D2AB8C22485633600670CED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC700AA11DCC7C211F5EA0A /* Pods-MenuBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +595,7 @@
 		};
 		3D2AB8C32485633600670CED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09A36757EC3AAD6E2DDD8E0 /* Pods-MenuBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +615,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D1DCEE12486B7D100E737CF /* Build configuration list for PBXNativeTarget "MenuBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1DCEDF2486B7D100E737CF /* Debug */,
+				3D1DCEE02486B7D100E737CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3D2AB8A82485633500670CED /* Build configuration list for PBXProject "MenuBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
